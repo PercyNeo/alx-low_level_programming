@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
   *main a program that prints the alphabet in lowercase using putchar
