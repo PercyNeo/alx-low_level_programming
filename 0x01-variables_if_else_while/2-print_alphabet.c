@@ -9,8 +9,8 @@ int main(void)
 	char ch;
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putcher(ch);
+		putchar(ch);
 	}
-	putcher('\n');
+	putchar('\n');
 	return (0);
 }
