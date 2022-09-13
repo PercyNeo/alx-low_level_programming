@@ -1,28 +1,22 @@
-#include <stdio.h>
-/**
-* program that prints _putchar
-* The character to print
-*
-* Return: On success 1.
-* On error, -1 is returned, and errno is set appropriately.
-*/
 
-void print_until_newline(char *s);
+#include "main.h"
+/**
+ * main - print putchar
+ * Return: always 0
+ */
 
 int main(void)
 {
-char s[] ="_putchar\n";
-print_until_newline(s);
-putchar('\n');
-return (0);
-}
-void print_until_newline(char *s)
-{
-int i = 0;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-while ( s[i] != '\n' && s[i] != '\0')
-{
-putchar(s[i]);
-i++;
-}
+	return (0);
+
 }
