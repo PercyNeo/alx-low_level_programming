@@ -21,7 +21,7 @@ array = malloc(sizeof(char) * size);
 if (array == NULL)
 return (NULL);
 
-for (int index = 0; index < size; index++)
+for (index = 0; index < size; index++)
 array[index] = c;
 return (array);
 }
