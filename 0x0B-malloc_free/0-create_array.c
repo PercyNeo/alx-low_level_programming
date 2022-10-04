@@ -1,34 +1,27 @@
 #include "main.h"
 
 /**
-* _strdup -> string duplicator function
-* @str: string to be dupliated
-* Return: a string pointe
+*create_array - create an array of chars, and 
+* initailizes it with a specific char.
+* @size: Size of array.
+* @c: Character to insert.
+* Return: NULL if size is zero or if it fails.
+* poniter to array if everything is normarl.
 */
 
-char *_strdup(char *str)
+char *create_array(unsigned int size, char c)
 {
-int i = 1, j = 0;
-char *s;
+char *array;
+usnsigned int index;
 
-if (str == NULL)
+if (size == 0)
+return (NULL);
+array = malloc(sizeof(char) * size);
 
-char *s;
-
-if (str == NULL)
+if (array == NULL)
 return (NULL);
 
-while (str[i])
-i++;
-s = (char *)malloc(i *sizeof(char) + 1);
-
-if (s == NULL)
-return (NULL);
-while (j < i)
-{
-s[j] = str[j];
-j++;
-}
-s[j] = '\0';
-return (s);
+for (index = 0; index < size; index++)
+array[index] = c;
+return (array);
 }
