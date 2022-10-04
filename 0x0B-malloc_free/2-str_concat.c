@@ -10,7 +10,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-char *contact_str;
+char *concat_str;
 int index;
 int concat_index = 0;
 int len = 0;
